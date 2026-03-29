@@ -1,0 +1,7 @@
+-- problem: Customers Who Never Order
+-- problem no: 183
+--Link: https://leetcode.com/problems/customers-who-never-order/
+--Approach: LEFT JOIN with alias
+select c.name as customers from customers c
+left join orders o on c.id= o.customerId
+where o.customerId is NULL;
