@@ -1,0 +1,7 @@
+-- problem: Duplicate emails
+-- problem no: 182
+--Link: https://leetcode.com/problems/duplicate-emails/
+--Approach: Group by, having
+Select email from Person
+group by email 
+having count(email) > 1;
