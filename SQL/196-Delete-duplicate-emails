@@ -1,3 +1,6 @@
+-- problem: Delete Duplicate emails
+-- problem no: 196
+--Link: https://leetcode.com/problems/delete-duplicate-emails/
 delete from person p1
 using person p2
 where p1.email= p2.email
